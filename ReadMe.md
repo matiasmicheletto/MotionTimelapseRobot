@@ -1,6 +1,6 @@
 # MTR - Motion Timelapse Robot
 
-Plataforma para lograr "motion timelapse".
+Low Cost Camera Slider - Deslizador para cámara de bajo presupuesto.
 
 ![Prototipo](img/prototype.jpg)  
 
