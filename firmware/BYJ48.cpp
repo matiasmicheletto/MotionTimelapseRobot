@@ -12,7 +12,6 @@ const boolean BYJ48::sequences[8][4] = {
     {true, false, false, true}
 };
 
-
 BYJ48::BYJ48(int In1, int In2, int In3, int In4, boolean mode){
     // Numero de pines de salida
     inputPins[0] = In1;
@@ -36,7 +35,6 @@ BYJ48::BYJ48(int In1, int In2, int In3, int In4, boolean mode){
     writeStep();
 }
 
-
 void BYJ48::writeStep(){ // Actualiza salida
     digitalWrite(inputPins[0], sequences[currentStep][0]);
     digitalWrite(inputPins[1], sequences[currentStep][1]);
@@ -59,6 +57,3 @@ void BYJ48::stepCCW(){ // Decrementar paso
     currentStep = currentStep <= 0 ? (halfSteppingMode ? 7:6) : currentStep-(halfSteppingMode ? 1:2);
     writeStep();
 }
-
-
-
